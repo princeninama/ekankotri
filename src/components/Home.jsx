@@ -1,7 +1,7 @@
 import React from "react";
 import videoBg from "../assets/v3.mp4";
 import couple from "../assets/couples.jpg";
-import garba from "../assets/garba.jpeg";
+import garba from "../assets/Navratri.avif";
 import mrgdone from "../assets/mrgdone.jpeg";
 import dine from "../assets/dine.jpeg";
 import hastmelap from "../assets/hastmelap.webp";
@@ -44,12 +44,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-red-50 to-red-200 w-[100%] mt-24 h-[60rem] relativer md:mt-96  lg:h-[65rem] lg:mt-[39rem] lg:pt-40">
+      <div className="bg-gradient-to-r from-red-50 to-red-200 w-[100%] mt-24 h-[60rem] relativer md:mt-96  lg:h-[65rem] lg:mt-[34rem] lg:pt-40">
         <div className="text-black text-left text-[1rem] p-3 lg:ml-8 lg:text-3xl lg:mt-12">
           <h1 className="">01 MAY</h1>
           <h1 className=""> Wednesday</h1>
         </div>
-        <div className="flex pl-[7rem] lg:pl-[18rem]">
+        <div className="lg:flex lg:pl-[10rem] lg:pl-[18rem]">
           <div className="flip-card ">
             <div className="flip-card-inner">
               <div className="flip-card-front">
@@ -106,7 +106,7 @@ const Home = () => {
           <h1 className="">THURSDAY</h1>
         </div>
         <div>
-          <div className="lg:flex sm:flex-row sm:space-x-4 pl-[15rem] lg:pl-[24rem]">
+          <div className="lg:flex sm:flex-row sm:space-x-4 lg:pl-[15rem] lg:pl-[24rem]">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
