@@ -44,7 +44,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-red-50 to-red-200 w-[100%] mt-24 h-[60rem] relativer md:mt-96  lg:h-[65rem] lg:mt-[34rem] lg:pt-40">
+      <div className="bg-gradient-to-r from-red-50 to-red-200 w-[100%] mt-24 h-[60rem] relativer md:mt-96  lg:h-[65rem] lg:mt-[34rem] lg:pt-40" id="eventsSection">
         <div className="text-black text-left text-[1rem] p-3 lg:ml-8 lg:text-3xl lg:mt-12">
           <h1 className="">01 MAY</h1>
           <h1 className=""> Wednesday</h1>

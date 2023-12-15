@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import logo from "../assets/logo1.jpg";
 
@@ -7,6 +6,13 @@ const Navbar = () => {
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
+  };
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setShowDropdown(false);
+    }
   };
 
   return (
@@ -29,27 +35,46 @@ const Navbar = () => {
         {/* Navigation links for small and medium devices */}
         {(showDropdown || window.innerWidth >= 640) && (
           <div className="hidden sm:flex sm:mr-5 space-x-4">
-            <div className="cursor-pointer hover:text-gray-700">Events</div>
-            <div className="cursor-pointer hover:text-gray-700">
+            <div className="cursor-pointer hover:text-gray-700"  onClick={() => scrollToSection("eventsSection")}
+        >Events</div>
+            <div className="cursor-pointer hover:text-gray-700"  onClick={() => scrollToSection("imagesection")}
+        >
               Pre Wedding
             </div>
-            <div className="cursor-pointer hover:text-gray-700">Reception</div>
-            <div className="cursor-pointer hover:text-gray-700">Message</div>
+            <div className="cursor-pointer hover:text-gray-700"  onClick={() => scrollToSection("eventsSection")}
+        >Reception</div>
+            <div className="cursor-pointer hover:text-gray-700"  onClick={() => scrollToSection("mapSection")}
+        >Message</div>
           </div>
         )}
 
-        {/* Dropdown for small devices */}
         {showDropdown && (
           <div className="sm:hidden absolute top-12 z-50 opacity-60 left-0 w-full bg-white border-b border-gray-300">
             <div className="text-black flex flex-col space-y-2 p-2">
-              <div className="cursor-pointer hover:text-gray-700">Events</div>
-              <div className="cursor-pointer hover:text-gray-700">
+              <div
+                className="cursor-pointer hover:text-gray-700"
+                onClick={() => scrollToSection("eventsSection")}
+              >
+                Events
+              </div>
+              <div
+                className="cursor-pointer hover:text-gray-700"
+                onClick={() => scrollToSection("imagesection")}
+              >
                 Pre Wedding
               </div>
-              <div className="cursor-pointer hover:text-gray-700">
+              <div
+                className="cursor-pointer hover:text-gray-700"
+                onClick={() => scrollToSection("eventsSection")}
+              >
                 Reception
               </div>
-              <div className="cursor-pointer hover:text-gray-700">Message</div>
+              <div
+                className="cursor-pointer hover:text-gray-700"
+                onClick={() => scrollToSection("mapSection")}
+              >
+                Message
+              </div>
             </div>
           </div>
         )}
@@ -59,4 +84,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

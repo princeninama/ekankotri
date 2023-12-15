@@ -22,7 +22,7 @@ const Img = () => {
 
   return (
     <>
-      {/* <div className="flex "> */}
+      <div id="imagesection">
       <div className="absolute z-10">
         {imgsrc.map((image, index) => (
           <img
@@ -41,7 +41,7 @@ const Img = () => {
           />
         ))}
       </div>
-      {/* </div> */}
+      </div>
     </>
   );
 };
