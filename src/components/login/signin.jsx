@@ -1,11 +1,12 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 
 const Signin = () =>{
+    const navigate=useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loginstate,setloginstate] = useState('Login')
-    
+    navigate('/welcome')
     const handleLogin = (e) => {
       e.preventDefault();
       // Your login logic here, such as API calls, authentication, etc.

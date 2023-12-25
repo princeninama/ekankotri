@@ -25,7 +25,7 @@ const Login = () =>{
 
       </video>
       
-      <Signup/>
+      <Signin/>
     </div>
     )
 }

@@ -44,12 +44,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-red-50 to-red-200 w-[100%] mt-24 h-[60rem] relativer md:mt-96  lg:h-[65rem] lg:mt-[34rem] lg:pt-40" id="eventsSection">
-        <div className="text-black text-left text-[1rem] p-3 lg:ml-8 lg:text-3xl lg:mt-12">
+      <div className="bg-gradient-to-r from-red-50 to-red-200 w-[100%] mt-24 h-[60rem] relative md:mt-96  lg:h-[65rem] lg:mt-[43rem] lg:pt-40" id="eventsSection">
+       
+        <div className="text-black bg-white w-24 p-1 rounded-r-full text-left text-[1rem] lg:w-52 lg:h-24 lg:p-4 lg:text-3xl lg:mt-12">
           <h1 className="">01 MAY</h1>
           <h1 className=""> Wednesday</h1>
         </div>
-        <div className="lg:flex lg:pl-[10rem] lg:pl-[18rem]">
+        <div className="lg:flex  lg:pl-[18rem]">
           <div className="flip-card ">
             <div className="flip-card-inner">
               <div className="flip-card-front">
@@ -101,12 +102,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="text-left text-[1rem] p-3 mt-[12rem] lg:text-3xl lg:ml-8 lg:mt-64">
+        <div className="text-black bg-white p-1 mt-64 rounded-r-full w-24  text-left text-[1rem] lg:w-52 lg:h-24 lg:p-4 lg:text-3xl lg:mt-64">
           <h1 className="">02 MAY</h1>
           <h1 className="">THURSDAY</h1>
         </div>
         <div>
-          <div className="lg:flex sm:flex-row sm:space-x-4 lg:pl-[15rem] lg:pl-[24rem]">
+          <div className="lg:flex sm:flex-row sm:space-x-4  lg:pl-[24rem]">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/logo1.jpg";
-
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate = useNavigate();
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleDropdown = () => {
